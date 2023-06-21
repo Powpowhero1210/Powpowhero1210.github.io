@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Temperature converter </title>
+    <script src="js/suhu.js"></script>
+    <link rel="stylesheet" href="css/Suhu.css">
+</head>
+
+<body>
+
+    <h1 id="Header"> Temperature converter </h1>
+    <div name="Cform" id="Cform">
+      <form>
+          <label for="Celcius" id="UpLabel"> Celcius: </label><br>
+          <input type="number" id="Celcius" name="Celcius"><br>
+          <br>
+          <input type="button" value="Calculate" id="CelciusBtn" name="CelciusBtn" onclick="GetResult()">
+          <Input type="button" value="Reverse" id="Reverse" name="ReverseBtn" onclick="ReverseResult()">
+          <input type="reset" value="reset" onclick="AllReset()">       
+      </form>
+    </div>
+
+    <div name="Result" id="Result">
+        <h4 id="BottomLabel">Farenheit: </h4>
+        <p id="ResParagraph"></p>
+        <p id="LogicLabel"></p>
+    </div>
+
+    <div name="Explanation" id="Explanation">
+        <h4>Temperature Conversion Formula:</h4>
+        <p>C = Celcius Temperature
+           F = Fahrenheit Temperature
+
+           C = (F - 32) * 5/9
+           F = (C * 9/5) + 32
+        </p>
+    </div>
+
+   
+      
+
+</body>
+</html>
